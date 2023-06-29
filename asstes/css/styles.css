@@ -1,0 +1,417 @@
+/* reset browser */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  /* width: 90%; */
+  max-width: 1280px;
+  margin: auto;
+}
+.collum-100{
+  width: 100%;
+}
+.collum-25{
+  width: calc(100% / 4);
+}
+/* Hang */
+.row {
+  display: flex;
+  margin: 0 -15px;
+  flex-wrap: wrap;
+}
+
+/* Cot */
+.collum {
+  /* width: calc(100% / 4); */
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 30px;
+}
+
+/* Header./Start */
+.header {
+  width: 100%;
+}
+
+/* C1: Header ra giua */
+/* .wrap-header {
+    height: 96px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    margin: 0 40px;
+} */
+
+/* C2: Header ra giua */
+.wrap-header {
+  width: calc(100% - (40px + 40px));
+  /* background-color: red; */
+  margin: auto;
+  display: flex;
+}
+
+.header .header-left {
+  width: 50%;
+  height: 96px;
+  display: flex;
+}
+
+.logo {
+  height: 96px;
+  /* background-color: paleturquoise; */
+  display: flex;
+  align-items: center;
+
+}
+
+.menu {
+  height: 96px;
+}
+
+.logo img {
+  width: 92px;
+  height: 64px;
+  object-fit: cover;
+}
+.menu ul {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+  height: 96px;
+}
+.menu ul li {
+  /* display: inline-block; */
+  list-style: none; /*Bo dau cham trong the khong co thu tu*/
+  margin-right: 30px;
+}
+.menu ul li a {
+  font-size: 16px;
+  color: #032d60;
+  text-decoration: none; /*Bo dau gach chan*/
+}
+
+
+.header .header-right {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.contact-us {
+  /* background-color: red; */
+  height: 96px;
+  display: flex;
+  align-items: center;
+  margin-right: 24px;
+}
+.contact-us .wrap-contact {
+  text-align: center;
+}
+
+
+.contact-us .wrap-contact a {
+  margin-bottom: 5px;
+  display: block;
+  color: #032d60;
+  font-size: 16px;
+}
+
+.contact-us .wrap-contact p {
+  font-size: 14px;
+  color: #032d60;
+}
+
+/* .social-icon {
+  width: 200px;
+  background-color: blue;
+  height: 96px;
+} */
+.social-icon ul {
+  display: flex;
+  height: 96px;
+  align-items: center;
+}
+.social-icon ul li {
+  list-style: none; /*Bo dau cham mac dinh ul li*/
+  margin-right: 24px;
+}
+.social-icon ul li i {
+  font-size: 14px;
+}
+.social-icon ul li .search {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%; /*Tao 1 cai bo goc cho phan tu*/
+}
+
+
+.social-icon ul li .search:hover { /*Di chuot va doi mau search*/
+  background-color: #EAF5FE;
+  color: #0076D2;
+  cursor: pointer;
+}
+
+.social-icon ul li .my-web {
+  width: 35px;
+  height: 35px;
+  /* background-color: red; */
+  border-radius: 50%;
+  display: flex;
+  align-items: center; /* Doc */
+  justify-content: center; /* Ngang*/
+}
+.social-icon ul li .my-web:hover {
+  background-color: #EAF5FE;
+  color: #0076D2;
+  cursor: pointer;
+}
+.social-icon ul li .wrap-login {
+  width: 80px;
+  height: 30px;
+  /* background: red; */
+  border-radius: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* hover: tao hieu ung cua phan tu duoc chi dinh */
+.social-icon ul li .wrap-login:hover {
+  background-color: #EAF5FE;
+  color: #0076D2;
+  cursor: pointer;
+}
+.social-icon ul li .wrap-login i {
+  margin-right: 5px;
+}
+.register {
+  /* background-color: green; */
+  display: flex;
+  justify-content: flex-end;
+
+}
+.register button {
+  background-color: #2e844a;
+  border: 1px solid #2e844a;
+  padding: 15px 30px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700; /* Lam dam chu */
+}
+
+/* Section-Demain./Start */
+.watch-demand {
+  background-color: #042D60;
+  /* height: 48px; */
+  width: 100%;
+}
+
+.watch-demand ul {
+  display: flex;
+  justify-content: center;
+}
+.watch-demand ul li {
+  list-style: none;
+}
+.demand-img {
+  height: 48px;
+  display: flex;
+  align-items: center;
+}
+.demand-img img {
+  width: 68px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+.demand-text {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  color: #fff;
+  font-weight: 600;
+  margin-right: 15px;
+}
+.demand-link {
+  height: 48px;
+  display: flex;
+  align-items: center;
+}
+.demand-link a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+}
+.demand-link a:hover {
+  text-decoration: none;
+}
+
+/* Trick-CSS./sTART */
+/* .banner {
+  width: 100%;
+  height: 500px;
+  background-color: red;
+  position: relative;
+}
+
+.item {
+  width: 150px;
+  height: 150px;
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+
+/* Banner./Start */
+.banner {
+  position: relative;
+}
+
+.banner .banner-bg img {
+  width: 100%;
+  height: 508px;
+  object-fit: cover;
+}
+
+.banner-right {
+  width: 510px;
+  height: 510px;
+  /* background-color: red; */
+  position: absolute;
+  top: 60px;
+  right: 130px;
+}
+.banner-right img {
+  width: 100%;
+  height: 510px;
+  object-fit: cover;
+}
+
+.banner-left {
+  width: 510px;
+  height: 510px;
+  background-color: green;
+  position: absolute;
+  top: 60px;
+  left: 130px;
+}
+
+/* Service./Start */
+.service {
+  margin-top: 50px;
+  position: relative;
+  z-index: 1;
+  background-image: linear-gradient(180deg, #FFFFFF 0%, rgb(234, 245, 254) 100%);
+  padding-bottom: 250px;
+}
+
+.service .title-service {
+  font-size: 40px;
+  letter-spacing: -.008em; /*do dan dong cua cac chu*/
+  line-height: 48px; /*dang dong giua cac hang cua text*/
+  text-align: center;
+  color: #032d60;
+  margin-bottom: 30px;
+}
+.small-business{
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px -2px hsla(0,0%,9%,.08), 0 8px 12px -2px hsla(0,0%,9%,.16);
+}
+
+.box-images{
+  width: 100%;
+  height: 165px;
+  /* background-color: red; */
+}
+.box-images img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.box-text{
+  width: 100%;
+  padding: 32px;
+  /* height: 300px;
+  background-color: violet */
+}
+.box-text h3{
+  margin-bottom: 16px;
+}
+.box-text h3 a{
+  color: #032d60;
+  font-size: 20px;
+  text-decoration: none;
+
+}
+.box-text p{
+  color: #181818;
+  font-size: 16px;
+  letter-spacing: -.0012em;
+  line-height: 24px;
+}
+.box-link{
+  width: 100%;
+  padding: 32px;
+  /* height: 100px; */
+
+  /* background-color: yellow; */
+  margin-bottom: 10px
+}
+.box-link a{
+  font-size: 16px;
+  font-weight: 700;
+  color: #080707;
+}
+.service .wrap-button{
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+.wrap-button button{
+  padding: 12px 32px;
+  color: #0176d3;
+  border: 1px solid #0176d3;
+  font-size: 16px;
+  border-radius: 5px;
+}
+.wrap-button button:hover{
+  color: #111;
+  border: 1px solid #111;
+}
+.bg-service{
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+.bg-service img{
+  width: 100%;
+}
+.service-2{
+  position: relative;
+  margin-top: 200px;
+  z-index: 1;
+}
+
+.service-2::before{
+  content: "";
+  width: 100%;
+  height: 586px;
+  background-image: url("../images/pb-bg.webp");
+  position: absolute;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
